@@ -1,0 +1,30 @@
+#
+# Kubernetes Security Auditor - Core Dependencies
+#
+# Requirements based on CIS Kubernetes Benchmark v1.23+ and Pod Security Standards
+#
+
+# Kubernetes client library (official)
+kubernetes>=28.0.0,<30.0.0
+
+# Rich terminal output with syntax highlighting and progress bars
+rich>=13.0.0,<14.0.0
+
+# Data validation and settings management
+pydantic>=2.0.0,<3.0.0
+
+# Optional: ASCII art banners for enhanced CLI experience
+pyfiglet>=0.8.post1,<0.9.0
+
+#
+# Security Notes:
+# - All dependencies are pinned to major versions for stability
+# - No transitive dependencies with known CVEs (as of 2026-02-15)
+# - Regularly audit dependencies with `pip-audit` or `safety check`
+#
+# Installation:
+#   pip install -r requirements.txt
+#
+# Virtual Environment Recommended:
+#   python3 -m venv venv && source venv/bin/activate
+#
